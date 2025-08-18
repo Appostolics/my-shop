@@ -1,6 +1,6 @@
 <template>
 	<div class="product-card">
-	<img src="https://gamingpc.com.ua/image/cache/770x510/e87fb2ce2e10979423f378d474daa52d.webp" :alt="name" class="product-image" />
+	<img :src="image" :alt="name" class="product-image" />
 	<h2>{{ name }}</h2>
 	<p>{{ description }}</p>
 	<p class="price">{{ price }} грн</p>

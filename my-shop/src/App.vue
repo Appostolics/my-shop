@@ -1,19 +1,17 @@
 <template>
 	<div class="app">
-		<ProductCard
-	name="Zeonix"
-	description="Класний комп"
-	price="47599грн"
-	image="https://gamingpc.com.ua/image/cache/770x510/e87fb2ce2e10979423f378d474daa52d.webp"/>
+		<ProductList/>
+		<FooterComponent/>
 	</div>
-	</template>
+</template>
 
 <script>
-import ProductCard from './components/ProductCard.vue';
-
+import FooterComponent from './components/FooterComponent.vue';
+import ProductList from './components/ProductList.vue'; 
 export default {
 	components:{
-		ProductCard
+		ProductList,
+		FooterComponent
 	}
 };
-</script>
+</script> 
