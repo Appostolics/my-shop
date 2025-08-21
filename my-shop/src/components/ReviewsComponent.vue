@@ -1,5 +1,8 @@
 <template>
     <div>
+        <h2>
+            Відгуки 
+        </h2>
         <table>
             <thead>
                 <tr>
@@ -46,3 +49,18 @@ this.reviews = result.data; // Зберігаємо розпарсені дан�
 },
 }
 </script>
+<style scoped>
+h2{
+    text-align: center;
+    color:#28a745;
+}
+ table{
+    width:90%;
+    margin:0 auto;
+ }
+ th,td{
+    background-color: #f8f9fa;
+    padding:4px;
+ }
+
+</style>
