@@ -6,12 +6,12 @@
         v-model="searchQuery"
         placeholder="Введіть назву товару"
         />
-        <ProductList:products="filteredProducts"/>
+        <ProductList :products="filteredProducts"/>
      </div>
 </template>
 <script>
 import ProductList from '../components/ProductList.vue';
-import ProductList from '../components/ProductList.vue';
+
 
 export default{
     components:{
@@ -74,12 +74,10 @@ export default{
     ],
     };
     },
-    
     computed: {
-        filteredProducts:function(){
+        filteredProducts: function(){
             return this.products.filter(function(product){
-                return
-    product.name.toLowerCase().includes(this.searchQuery.toLowerCase());
+                return product.name.toLowerCase().includes(this.searchQuery.toLowerCase());
         }.bind(this));
     }},
 };
